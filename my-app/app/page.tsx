@@ -29,7 +29,7 @@ export default async function Home() {
         <h1>Feed</h1>
 
         {posts.map((post) => (
-          <Posts key={post.id} {...post} />
+          <Posts key={post.id} {...post} author={post.author} />
         ))}
       </main>
     </div>
